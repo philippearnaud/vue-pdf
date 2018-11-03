@@ -77,7 +77,6 @@ export default function(pdfjsWrapper) {
 				}
 					
 
-				this.$refs.annotationLayer.style.transform = 'scale('+resolutionScale+')';
 			},
 			print: function(dpi, pageList) {
 

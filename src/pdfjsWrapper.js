@@ -240,8 +240,6 @@ export default function(PDFJS) {
 				viewport: viewport
 			});
 			
-			annotationLayerElt.style.visibility = 'hidden';
-			clearAnnotations();
 
 			var viewer = {
 				scrollPageIntoView: function(params) {
@@ -381,8 +379,6 @@ export default function(PDFJS) {
 				emitEvent('error', err);
 			})
 		}
-		
-		annotationLayerElt.style.transformOrigin = '0 0';
 	}
 
 	return {
